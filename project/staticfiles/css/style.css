@@ -1,0 +1,37 @@
+.body {
+    --value: white;
+    background-color: var(--value);
+    transition: background-color 1s; 
+  }
+  
+  
+.car{
+    transition: 0.3s;
+  }
+.car:hover{
+    transform: translateY(-10px) scale(1);
+    transition: 0.3s;
+}
+
+  /* Sahifa bo'yi balandlikni ta'minlash */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/* Container uchun moslashuvchan dizayn */
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%; /* Sahifa to'liq balandligini qoplaydi */
+}
+
+/* Asosiy qism */
+main {
+  flex: 1; /* Asosiy qism bo'sh joyni to'ldiradi */
+}
+
+/* Footerni sahifaning pastida saqlash */
+footer {
+  margin-top: auto; /* Yuqoridagi bo'sh joyni to'ldirish */
+}

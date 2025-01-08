@@ -1,37 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
-
     {% include 'components/_styles.html' %}
-
     <title>
       {% block title %}
       {% endblock title %}
     </title>
-
-</head>
-<body>
-
-
-<div class="container">
-
-{% include 'components/_navbar.html' %}
-
-<!--Start Main-->
-<main class="mt-5 mb-5">
-
-  {% block main %}
-  {% endblock main %}
-
-</main>
-<!--End Main-->
-
-{% include 'components/_footer.html' %}
-
-</div>
-
-{% include 'components/_scripts.html' %}
-
-</body>
+  </head>
+  <body class="body">
+    <div class="container">
+      {% include 'components/_navbar.html' %}
+      <main class="mt-5 mb-5">
+        {% block main %}
+        {% endblock main %}
+      </main>
+      {% include 'components/_footer.html' %}
+    </div>
+  {% include 'components/_scripts.html' %}
+  </body>
 </html>
